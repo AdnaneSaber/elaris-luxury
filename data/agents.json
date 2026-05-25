@@ -31,5 +31,82 @@
     "assignedOrders": 3,
     "status": "active",
     "joinedAt": "2026-03-10T10:00:00Z"
+  },
+  {
+    "id": "agent_1779723000551",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T15:30:00.551Z"
+  },
+  {
+    "id": "agent_1779723102412",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T15:31:42.412Z"
+  },
+  {
+    "id": "agent_1779723269707",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T15:34:29.707Z"
+  },
+  {
+    "id": "agent_1779723527260",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T15:38:47.260Z"
+  },
+  {
+    "id": "agent_1779723655706",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T15:40:55.706Z"
+  },
+  {
+    "id": "agent_1779724969340",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T16:02:49.340Z"
+  },
+  {
+    "id": "agent_1779725031085",
+    "name": "Test Agent",
+    "email": "agent@elaris.ma",
+    "phone": "+212600000003",
+    "role": "agent",
+    "assignedLeads": 0,
+    "assignedOrders": 0,
+    "status": "active",
+    "joinedAt": "2026-05-25T16:03:51.085Z"
   }
 ]
