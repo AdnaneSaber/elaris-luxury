@@ -174,6 +174,10 @@ describe("useSearchInput", () => {
 
   describe("handleSectionClick", () => {
     it("closes dropdown and scrolls to element when on same page", () => {
+      Object.defineProperty(window, "location", {
+        value: { pathname: "/admin/dashboard" },
+        writable: true,
+      });
       const scrollIntoViewMock = vi.fn();
       const el = document.createElement("div");
       el.scrollIntoView = scrollIntoViewMock;

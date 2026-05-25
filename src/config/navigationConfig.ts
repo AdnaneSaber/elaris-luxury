@@ -13,6 +13,7 @@ import type { MenuConfigEntry } from "../components/layout/sideMenu/types";
 
 /**
  * Central navigation config used by SideMenu, SideMenuMobile and search input.
+ * All admin routes prefixed with /admin for backoffice.
  */
 export const menuConfig: MenuConfigEntry[] = [
   { type: "category", titleKey: "pages" },
@@ -20,7 +21,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "dashboard",
     Icon: DashboardIcon,
-    path: "/dashboard",
+    path: "/admin/dashboard",
     sections: [
       { id: "revenueOverTime", titleKey: "revenueOverTime" },
       { id: "bestsellingProducts", titleKey: "bestsellingProducts" },
@@ -32,7 +33,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "leads",
     Icon: DonutIcon,
-    path: "/leads",
+    path: "/admin/leads",
     sections: [{ id: "leads", titleKey: "leads" }],
   },
   {
@@ -42,26 +43,33 @@ export const menuConfig: MenuConfigEntry[] = [
     submenuItems: [
       {
         titleKey: "orders",
-        path: "/orders",
+        path: "/admin/orders",
         sections: [{ id: "orders", titleKey: "orders" }],
       },
       {
         titleKey: "customers",
-        path: "/customers",
+        path: "/admin/customers",
         sections: [{ id: "customers", titleKey: "customers" }],
       },
       {
         titleKey: "products",
-        path: "/products",
+        path: "/admin/products",
         sections: [{ id: "products", titleKey: "products" }],
       },
     ],
   },
   {
     type: "item",
+    titleKey: "agents",
+    Icon: UserProfileIcon,
+    path: "/admin/agents",
+    sections: [{ id: "agents", titleKey: "agents" }],
+  },
+  {
+    type: "item",
     titleKey: "analytics",
     Icon: AnalyticsIcon,
-    path: "/analytics",
+    path: "/admin/analytics",
     sections: [
       { id: "assetPerformance", titleKey: "assetPerformance" },
       { id: "todaysSales", titleKey: "todaysSales" },
@@ -76,7 +84,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "userProfile",
     Icon: UserProfileIcon,
-    path: "/profile",
+    path: "/admin/profile",
     sections: [
       { id: "about", titleKey: "about" },
       { id: "accountSettings", titleKey: "accountSettings" },
@@ -87,7 +95,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "calendar",
     Icon: CalendarIcon,
-    path: "/calendar",
+    path: "/admin/calendar",
     sections: [{ id: "calendar", titleKey: "calendar" }],
   },
   {
@@ -95,7 +103,7 @@ export const menuConfig: MenuConfigEntry[] = [
     titleKey: "authentication",
     Icon: PasswordIcon,
     submenuItems: [
-      { titleKey: "userManagement", path: "/user-management" },
+      { titleKey: "userManagement", path: "/admin/user-management" },
       { titleKey: "login", path: "/login", newTab: true },
       { titleKey: "register", path: "/register", newTab: true },
       { titleKey: "forgotPassword", path: "/forgot-password", newTab: true },
@@ -116,7 +124,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "uiElements",
     Icon: UIElementsIcon,
-    path: "/ui-elements",
+    path: "/admin/ui-elements",
     sections: [
       { id: "buttons", titleKey: "buttons" },
       { id: "command", titleKey: "command" },
@@ -140,7 +148,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "forms",
     Icon: FormsIcon,
-    path: "/forms",
+    path: "/admin/forms",
     sections: [
       { id: "inputFields", titleKey: "inputFields" },
       { id: "selectInputs", titleKey: "selectInputs" },
@@ -159,7 +167,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "tables",
     Icon: TablesIcon,
-    path: "/tables",
+    path: "/admin/tables",
     sections: [
       { id: "basicTable", titleKey: "basicTable" },
       { id: "advancedTable", titleKey: "advancedTable" },
@@ -171,7 +179,7 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "charts",
     Icon: DonutIcon,
-    path: "/charts",
+    path: "/admin/charts",
     sections: [
       { id: "areaChart", titleKey: "areaChart" },
       { id: "scatterChart", titleKey: "scatterChart" },

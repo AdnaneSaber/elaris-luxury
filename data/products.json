@@ -1,0 +1,20 @@
+[
+  {
+    "id": "elaris-001",
+    "name": "Robe Caftan Édition Limitée",
+    "description": "Caftan en soie brodée à la main, pièce unique de la collection ELARIS 2026. Chaque broderie est réalisée par nos artisans à Casablanca avec des fils d'or et de soie naturelle.",
+    "price": 4500,
+    "currency": "MAD",
+    "image": "/images/collection-1.jpg",
+    "category": "Caftans",
+    "stock": 1,
+    "featured": true,
+    "details": [
+      "Soie naturelle 100%",
+      "Brodée à la main",
+      "Fil d'or véritable",
+      "Pièce unique",
+      "Livraison incluse"
+    ]
+  }
+]

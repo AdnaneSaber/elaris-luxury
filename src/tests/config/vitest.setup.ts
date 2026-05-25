@@ -11,7 +11,23 @@ afterEach(() => {
   cleanup();
 });
 
-// Mock next/navigation
+// Mock localStorage for zustand persist middleware
+class LocalStorageMock {
+  private store: Record<string, string> = {};
+  getItem(key: string) {
+    return this.store[key] ?? null;
+  }
+  setItem(key: string, value: string) {
+    this.store[key] = String(value);
+  }
+  removeItem(key: string) {
+    delete this.store[key];
+  }
+  clear() {
+    this.store = {};
+  }
+}
+vi.stubGlobal("localStorage", new LocalStorageMock());
 vi.mock("next/navigation", () => ({
   useRouter: () => ({
     push: vi.fn(),
