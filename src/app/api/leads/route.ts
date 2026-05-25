@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
     try {
       await notifyViaWhatsApp(newLead);
     } catch (_err) {
-      console.error("WhatsApp notification failed:", err);
+      console.error("WhatsApp notification failed:", _err);
     }
 
     return NextResponse.json({ success: true, lead: newLead });
