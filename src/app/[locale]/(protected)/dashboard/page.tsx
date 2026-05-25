@@ -5,7 +5,7 @@ import { PageWrapper } from "@/components/common/PageWrapper";
 import { HomepageView } from "@/components/views/homepage/HomepageView";
 import { getData } from "@/services/getData";
 
-const Home = async ({ params }: { params: Promise<{ locale: string }> }) => {
+const Dashboard = async ({ params }: { params: Promise<{ locale: string }> }) => {
   const { locale } = await params;
   setRequestLocale(locale);
 
@@ -19,7 +19,7 @@ const Home = async ({ params }: { params: Promise<{ locale: string }> }) => {
 };
 
 export const metadata: Metadata = {
-  title: { absolute: "Nellavio" },
+  title: { absolute: "ELARIS Dashboard" },
 };
 
-export default Home;
+export default Dashboard;

@@ -20,13 +20,20 @@ export const menuConfig: MenuConfigEntry[] = [
     type: "item",
     titleKey: "dashboard",
     Icon: DashboardIcon,
-    path: "/",
+    path: "/dashboard",
     sections: [
       { id: "revenueOverTime", titleKey: "revenueOverTime" },
       { id: "bestsellingProducts", titleKey: "bestsellingProducts" },
       { id: "customerSatisfaction", titleKey: "customerSatisfaction" },
       { id: "revenuePerCountry", titleKey: "revenuePerCountry" },
     ],
+  },
+  {
+    type: "item",
+    titleKey: "leads",
+    Icon: DonutIcon,
+    path: "/leads",
+    sections: [{ id: "leads", titleKey: "leads" }],
   },
   {
     type: "submenu",

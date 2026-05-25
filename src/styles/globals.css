@@ -7,6 +7,21 @@
 @import "./overrides/datepicker.css";
 @import "./overrides/lightbox.css";
 
+/* ELARIS Luxury Theme Colors */
+@theme {
+  --color-elaris-black: #0a0a0a;
+  --color-elaris-black-light: #141414;
+  --color-elaris-gold: #c9a962;
+  --color-elaris-gold-light: #d4b978;
+  --color-elaris-gold-dark: #a08540;
+  --color-elaris-cream: #f5f0e8;
+  --color-elaris-cream-muted: #c4b8a0;
+  --color-elaris-warm-gray: #8a8278;
+  --color-elaris-border: rgba(201, 169, 98, 0.15);
+  --font-playfair: "Playfair Display", serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+}
+
 /* Custom breakpoints */
 @theme {
   --breakpoint-xsm: 30rem; /* 480px */
